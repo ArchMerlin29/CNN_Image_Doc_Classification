@@ -1,16 +1,23 @@
- Real World Problem
-The automatic classification and labeling of images of documents based on their
-content is a real-world problem known as document image classification. There
-is a rising need to appropriately categorize these images for a variety of applications, including document management, information retrieval, and data analysis, as a result of the expanding number of digitized documents that are already
-available, such as scanned papers, electronic invoices, receipts, and forms. However, when dealing with massive volumes of data, manually classifying these
-documents can be time-consuming and error-prone.
-It is now possible to reach near-human performance in document image categorization thanks to recent developments in AI approaches and the accessibility
-of powerful technology.
-In several sectors, including banking, insurance, healthcare, and government,
-where there is an enormous quantity of documents that need to be processed
-and handled, AI is clearly needed for document image classification. AI may
-assist in optimizing the workflow for document processing and classification,
-which can save a lot of time and money while also improving productivity and
-reducing errors. As a result, there is a significant need for AI-based document
-image classification systems, and this is an important topic for AI research and
-development. This section provides an introduction to the project.
+About The Dataset:
+The dataset utilised in this study was obtained from Kaggle [17], entitled ”Real
+World Document Collections,” comprising 16 distinct classes with roughly 300
+images in .jpg format per class. This dataset is a representative sample of the
+RVL-CDIP dataset, which encompasses 4.45 GB of data. To train the CNN
+model, Khaled Hushme removed class 14 (Scientific-publication)[shown in red],
+which displayed comparable features and page layout to the ”news-article” class
+, when utilising the benchmark algorithm. This resulted in an accuracy score
+of 99.54 train, validation, and test sets [B.1.1] and used to train [A.1.1] the model. Additionally, CNN extracted features were applied on SVM [A.1.3], LR [A.1.4],
+and RF [A.1.5] models with different parameters to study the neural network’s
+behaviour and compare it with the benchmark algorithm.
+Subset of Dataset 1:
+However, due to computational limitations, HOG [A.1.2] features could not
+be extracted using Dataset 1. To experiment with a smaller dataset on CNN and
+traditional classifiers, the train set of Dataset 1 was divided into tn-hog, val-hog,
+and tst-hog sets. This subset of Dataset 1 was used to extract HOG features
+and apply them to SVM, LR, and RF models. Additionally, this subset was
+used to train a CNN model and compare its accuracy with traditional classifiers
+to evaluate the behaviour and the impact of dataset size on each model.
+This subset of Dataset 1 was used to extract HOG features and apply on
+SVM, LR and RF. Also used this data to train CNN model and compare its
+accuracy with traditional classifiers to evaluate the behaviour and how data set
+size matters in each of the models.
