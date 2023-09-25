@@ -1,0 +1,16 @@
+ Real World Problem
+The automatic classification and labeling of images of documents based on their
+content is a real-world problem known as document image classification. There
+is a rising need to appropriately categorize these images for a variety of applications, including document management, information retrieval, and data analysis, as a result of the expanding number of digitized documents that are already
+available, such as scanned papers, electronic invoices, receipts, and forms. However, when dealing with massive volumes of data, manually classifying these
+documents can be time-consuming and error-prone.
+It is now possible to reach near-human performance in document image categorization thanks to recent developments in AI approaches and the accessibility
+of powerful technology.
+In several sectors, including banking, insurance, healthcare, and government,
+where there is an enormous quantity of documents that need to be processed
+and handled, AI is clearly needed for document image classification. AI may
+assist in optimizing the workflow for document processing and classification,
+which can save a lot of time and money while also improving productivity and
+reducing errors. As a result, there is a significant need for AI-based document
+image classification systems, and this is an important topic for AI research and
+development. This section provides an introduction to the project.
